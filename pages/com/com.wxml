@@ -104,4 +104,24 @@
             </picker>
         </view>
     </view>
+
+    <!--弹层-->
+    <view>action-sheet</view>
+    <view>
+        <button type="default" bindtap="actionSheetTap">弹出action sheet</button>
+        <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+            <block wx:for-items="{{actionSheetItems}}">
+                <action-sheet-item class="item" bindtap="bindActionSheet" data-text="{{item}}">{{item}}</action-sheet-item>
+            </block>
+            <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+        </action-sheet>
+    </view>
+    
+    <view>Toast</view>
+    <view>
+        <button bindtap="toastShow">Toast</button>
+        <view>
+            <toast hidden="{{toasttip}}" duration="3000" bindchange="toastcallback">我是一个消息弹窗</toast>
+        </view>
+    </view>
 </view>

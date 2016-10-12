@@ -6,7 +6,10 @@ Page({
     array:["美国","中国","巴西","日本"],
     index:0,
     date:"2016-09-01",
-    time:"12:01"
+    time:"12:01",
+    actionSheetHidden:true,
+    actionSheetItems:['one', 'two', 'three', 'four'],
+    toasttip: true
   },
   upperddd: function(e) {
     // console.log(e)
@@ -44,6 +47,33 @@ Page({
   bindTimeChange:function(e){
     this.setData({
       time:e.detail.time
+    })
+  },
+  actionSheetTap: function(e) {
+    this.setData({
+      actionSheetHidden: !this.data.actionSheetHidden
+    })
+  },
+  actionSheetChange: function(e) {
+    this.setData({
+      actionSheetHidden: !this.data.actionSheetHidden
+    })
+  },
+  bindActionSheet: function(e) {
+    console.log(e);
+     this.setData({
+      actionSheetHidden: !this.data.actionSheetHidden
+    })
+  },
+  toastShow: function(e) {
+    this.setData({
+      toasttip:false
+    })
+  },
+  toastcallback: function(e) {
+    console.log(e);
+     this.setData({
+      toasttip:true
     })
   }
 })
