@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    
+  </view>
+  <!--
+  <view class="usermotto">
+    <button bindtap="clickMe">click Me</button>
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view wx:if="{{view == 'if'}}">
+    IF
+  </view>
+  <view wx:elif="{{view == 'elif'}}">
+    ELSE IF
+  </view>
+  <view wx:else="{{view == 'else'}}">
+    ELSE
+  </view>
+  -->
+<!--
+  <view id="outView" bindtap="out">
+    <view id="middle" catchtap="middle">
+      <view id="inner" bindtap="inner">
+        Inner
+      </view>
+    </view>
+  </view>
+  -->
+</view>

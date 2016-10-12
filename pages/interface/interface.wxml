@@ -1,0 +1,13 @@
+<view>
+    <button bindtap="chImage">本地相册</button>
+    <swpier indicator-dots="false" autoplay="false" interval="5000" duration="1000">
+        <block wx:for-items="{{imgs}}">
+            <swpier-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+            </swpier-item>
+        </block>
+    </swpier>
+
+    <video src="{{src}}"></video>
+    <button bindtap="chVideo">视频</button>
+</view>
