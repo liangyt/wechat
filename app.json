@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/interface/interface",
-    "pages/com/com"
+    "pages/com/com",
+    "pages/list/list"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -26,6 +27,9 @@
     },{
       "pagePath":"pages/com/com",
       "text":"组件测试"
+    },{
+      "pagePath":"pages/list/list",
+      "text":"实战"
     }]
   }
 }

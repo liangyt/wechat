@@ -1,0 +1,17 @@
+<view>
+    <block wx:for="{{list}}" wx:for-item="item">
+
+        <view class="flex-container">
+
+            <view class="flex-item-left text-center">
+                <icon type="success" size="80" />
+            </view>
+            <view class="flex-item-right">
+                <view>{{item.name}}</view>
+                <view>积分：{{item.price}}</view>
+            </view>
+
+        </view>
+
+    </block>
+</view>
