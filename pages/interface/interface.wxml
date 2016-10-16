@@ -1,13 +1,28 @@
 <view>
     <button bindtap="chImage">本地相册</button>
-    <swpier indicator-dots="false" autoplay="false" interval="5000" duration="1000">
-        <block wx:for-items="{{imgs}}">
-            <swpier-item>
-            <image src="{{item}}" class="slide-image" width="355" height="150"/>
-            </swpier-item>
-        </block>
-    </swpier>
+</view>
 
-    <video src="{{src}}"></video>
-    <button bindtap="chVideo">视频</button>
+<!--一个来自github的例子-->
+<view class="page">
+    <view class="page__bd">
+        <view class="section section_gap swiper">
+            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for-items="{{imgs}}">
+                    <swiper-item>
+                        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="btn-area">
+            <button type="default" bindtap="changeIndicatorDots">indicator-dots</button>
+            <button type="default" bindtap="changeVertical">{{vertical?'horizontal':'vertical'}}</button>
+            <button type="default" bindtap="changeAutoplay">autoplay</button>
+        </view>
+        <slider bindchange="durationChange" value="{{duration}}" show-value min="500" max="2000"/>
+        <view class="section__title">duration</view>
+        <slider bindchange="intervalChange" value="{{interval}}" show-value min="2000" max="10000"/>
+        <view class="section__title">interval</view>
+    </view>
 </view>

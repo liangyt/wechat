@@ -11,9 +11,23 @@
     /*border: 2px solid #ccc;*/
     width: 40%;
 }
-..flex-item-right {
+.flex-item-right {
     width:60%;
 }
 .text-center {
     text-align: center;
+}
+.price {
+    font-size: 10px;
+    color: red;
+}
+.buy {
+    width:80px;
+    font-size:10px;
+    line-height:16px;
+    display:inline-block;
+    float: right;
+}
+.p_s {
+    font-size: 10px;
 }

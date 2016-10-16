@@ -1,0 +1,4 @@
+.swpier-item {
+    display: block;
+    height: 100px;
+}

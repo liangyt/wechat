@@ -4,13 +4,16 @@
     "pages/logs/logs",
     "pages/interface/interface",
     "pages/com/com",
-    "pages/list/list"
+    
+    "pages/list/list",
+    "pages/listdetail/listdetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
   },
   "tabBar":{
     "color":"#fff",
@@ -31,5 +34,6 @@
       "pagePath":"pages/list/list",
       "text":"实战"
     }]
-  }
+  },
+  "debug":true
 }

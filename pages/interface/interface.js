@@ -1,7 +1,15 @@
+var app = getApp();
+
 Page({
   data:{
     src:'',
-    imgs:[]
+    imgs:[],
+    background: ['green', 'red', 'yellow'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: false,
+    interval: 3000,
+    duration: 1000
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -35,6 +43,13 @@ Page({
       wx.chooseImage({
           success:function(res) {
               console.log(self.data.imgs);
+              wx.setStorage({
+                key:"src",
+                data:self.data.imgs[0]
+              });
+
+              app.listImg = self.data.imgs[0];
+
               var _list = self.data.imgs.concat(res.tempFilePaths);
               self.setData({
                   imgs:_list
@@ -54,5 +69,30 @@ Page({
             })
         }
     })
-  }
+  },
+  changeIndicatorDots: function (e) {
+        this.setData({
+            indicatorDots: !this.data.indicatorDots
+        })
+    },
+    changeVertical: function (e) {
+        this.setData({
+            vertical: !this.data.vertical
+        })
+    },
+    changeAutoplay: function (e) {
+        this.setData({
+            autoplay: !this.data.autoplay
+        })
+    },
+    intervalChange: function (e) {
+        this.setData({
+            interval: e.detail.value
+        })
+    },
+    durationChange: function (e) {
+        this.setData({
+            duration: e.detail.value
+        })
+    }
 })

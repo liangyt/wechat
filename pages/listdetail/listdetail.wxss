@@ -1,0 +1,21 @@
+.swpier-item {
+    display: block;
+    height: 150px;
+}
+.detail {
+    border:1px solid #bbb;
+}
+
+.tab {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.tabActive {
+    border-bottom:2px solid #ff0000;
+}
+
+.tabBar {
+    border-bottom:1px solid #bbb;
+}
