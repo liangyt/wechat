@@ -1,7 +1,8 @@
 Page({
   data:{
     modalHidden:false,
-    imgs:[]
+    imgs:[],
+    currTab:1
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -32,6 +33,11 @@ Page({
                 modalHidden:true
             })
         }
+    })
+  },
+  tab: function(e) {
+    this.setData({
+      currTab:e.currentTarget.dataset.index
     })
   }
 })
