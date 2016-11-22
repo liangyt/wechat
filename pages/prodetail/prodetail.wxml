@@ -22,8 +22,10 @@
                     <view class="weui-form-preview__value">iPhone 6s iPhone 6s iPhone 6s iPhone 6s iPhone 6s iPhone 6s iPhone 6s</view>
                 </view>
             </view>
+            <view>
+                <button class="weui-btn" type="primary" bindtap="buy">立即购买</button>
+            </view>
         </view>
-        
         <view class="weui-tab">
             <view class="weui-navbar">
                 <block wx:for-items="{{tabs}}" wx:key="{{index}}">

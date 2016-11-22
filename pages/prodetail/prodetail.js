@@ -23,5 +23,17 @@ Page({
             sliderOffset: e.currentTarget.offsetLeft,
             activeIndex: e.currentTarget.id
         });
+    },
+    // 立即购买
+    buy: function(e) {
+        wx.showToast({
+            title: '加载中',
+            icon: 'loading',
+            duration: 10000
+        })
+
+        setTimeout(function(){
+             wx.hideToast()
+        },2000)
     }
 });
