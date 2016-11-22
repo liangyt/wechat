@@ -1,7 +1,7 @@
 {
     "navigationBarBackgroundColor":"#ffaad5",
     "navigationBarTextStyle":"blue",
-    "navigationBarTitleText":"小商店",
+    "navigationBarTitleText":"商品详情",
     "backgroundColor":"#eeeeee",
     "backgroundTextStyle":"light",
     "enablePullDownRefresh":true

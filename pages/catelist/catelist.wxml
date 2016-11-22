@@ -1,0 +1,13 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="../prolist/prolist" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{list}}">
+                <view class="weui-cell__hd">
+                    <image src="../../images/image.jpg" style="margin-right: 5px;vertical-align: middle;width:40px; height: 40px;"></image>
+                </view>
+                <view class="weui-cell__bd">分类 {{item}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+</view>

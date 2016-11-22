@@ -1,0 +1,22 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-flex" wx:for="{{list}}">
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

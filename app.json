@@ -1,6 +1,11 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/catelist/catelist",
+    "pages/prolist/prolist",
+    "pages/prodetail/prodetail",
+    "pages/todo/todo",
+    
     "pages/logs/logs",
     "pages/interface/interface",
     "pages/com/com",

@@ -1,0 +1,13 @@
+<view>
+    <view class="title">
+        <label>TODO</label>
+    </view>
+    <view>
+        <input />
+    </view>
+    <block wx:for="{{list}}">
+        <view>
+            {{}}
+        </view>
+    </block>
+</view>

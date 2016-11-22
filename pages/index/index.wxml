@@ -1,32 +1,104 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="page">
     
-  </view>
-  <!--
-  <view class="usermotto">
-    <button bindtap="clickMe">click Me</button>
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <view wx:if="{{view == 'if'}}">
-    IF
-  </view>
-  <view wx:elif="{{view == 'elif'}}">
-    ELSE IF
-  </view>
-  <view wx:else="{{view == 'else'}}">
-    ELSE
-  </view>
-  -->
-<!--
-  <view id="outView" bindtap="out">
-    <view id="middle" catchtap="middle">
-      <view id="inner" bindtap="inner">
-        Inner
-      </view>
+    <view class="swiper-banner">
+        <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+            <block wx:for-items="{{list}}">
+                <swiper-item>
+                    <image src="../../images/image.jpg" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
     </view>
-  </view>
-  -->
+    <!--分类-->
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+            <view class="weui-flex__item"><navigator url="../catelist/catelist"><image class="cata-img" src="../../images/image.jpg"/></navigator></view>
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells__title">非常火的商品</view>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="weui-cells__title">火辣推荐</view>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+            <view class="weui-flex__item">
+                <navigator url="../prodetail/prodetail"><image class="prolist-img" src="../../images/image.jpg"/>
+                <view>
+                    <view>iPhone 6S</view>
+                    <view class="price">价格：6488￥</view>
+                </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
 </view>
