@@ -1,0 +1,19 @@
+.center-hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #ccc;
+
+    margin-bottom: 20px;
+}
+
+.weui-cells_after-title {
+    margin: 5px 0;
+}
+
+.center-header {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
