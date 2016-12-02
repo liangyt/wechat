@@ -19,23 +19,21 @@
     "enablePullDownRefresh":true
   },
   "tabBar":{
-    "color":"#fff",
-    "backgroundColor":"#ff0555",
     "list":[{
           "pagePath":"pages/index/index",
-          "text":"首页"
+          "text":"首页",
+          "iconPath":"images/icon-home.png",
+          "selectedIconPath":"images/icon-home-h.png"
     }, {
-      "pagePath":"pages/interface/interface",
-      "text":"接口调用"  
-    },{
-      "pagePath":"pages/com/com",
-      "text":"组件测试"
-    },{
       "pagePath":"pages/cart/cart",
-      "text":"购物车"
+      "text":"购物车",
+      "iconPath":"images/icon-cart.png",
+      "selectedIconPath":"images/icon-cart-h.png"
     },{
       "pagePath":"pages/center/center",
-      "text":"个人中心"
+      "text":"个人中心",
+      "iconPath":"images/icon-member.png",
+      "selectedIconPath":"images/icon-member-h.png"
     }]
   },
   "debug":true
