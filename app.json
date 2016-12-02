@@ -4,14 +4,11 @@
     "pages/catelist/catelist",
     "pages/prolist/prolist",
     "pages/prodetail/prodetail",
-    "pages/todo/todo",
+    "pages/cart/cart",
     
     "pages/interface/interface",
     "pages/com/com",
     
-    "pages/list/list",
-    "pages/listdetail/listdetail",
-
     "pages/center/center"
   ],
   "window":{
@@ -33,6 +30,9 @@
     },{
       "pagePath":"pages/com/com",
       "text":"组件测试"
+    },{
+      "pagePath":"pages/cart/cart",
+      "text":"购物车"
     },{
       "pagePath":"pages/center/center",
       "text":"个人中心"

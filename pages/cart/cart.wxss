@@ -1,0 +1,19 @@
+
+.cart-flex {
+    display: flex;
+}
+.cart-num {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+.operate{
+    border: solid 1px #ccc;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+.price {
+    width: 150px;
+}

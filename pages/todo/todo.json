@@ -1,8 +1,0 @@
-{
-    "navigationBarBackgroundColor":"#ffaad5",
-    "navigationBarTextStyle":"red",
-    "navigationBarTitleText":"Todo",
-    "backgroundColor":"#eeeeee",
-    "backgroundTextStyle":"light",
-    "enablePullDownRefresh":true
-}

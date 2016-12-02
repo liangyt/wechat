@@ -24,7 +24,28 @@ App({
       })
     }
   },
+  getSysInfo: function(cb) {
+    var self = this;
+    if(this.globalData.sysInfo) {
+      typeof cb == 'function' && cb(this.globalData.sysInfo)
+    }
+    else {
+      wx.getSystemInfo({
+        success: function(res) {
+          // console.log(res.model)
+          // console.log(res.pixelRatio)
+          // console.log(res.windowWidth)
+          // console.log(res.windowHeight)
+          // console.log(res.language)
+          // console.log(res.version)
+          self.globalData.sysInfo = res;
+          typeof cb == "function" && cb(self.globalData.sysInfo)
+        }
+      })
+    }
+  },
   globalData:{
+    sysInfo:null,
     userInfo:null,
     listImg:''
   }

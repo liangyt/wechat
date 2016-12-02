@@ -1,7 +1,7 @@
 {
     "navigationBarBackgroundColor":"#ffaad5",
     "navigationBarTextStyle":"blue",
-    "navigationBarTitleText":"实战",
+    "navigationBarTitleText":"购物车",
     "backgroundColor":"#eeeeee",
     "backgroundTextStyle":"light",
     "enablePullDownRefresh":true

@@ -1,0 +1,24 @@
+<view class="page cart">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                <view wx:for="{{list}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/image.jpg" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.name}} </view>
+                        <view class="cart-flex">
+                            <view class="price">价格：{{item.price}}￥</view>
+                            <view>
+                                <label class="operate" bindtap="minus" data-id="{{index}}">-</label>
+                                <label class="cart-num">{{item.num}}</label>
+                                <label class="operate" bindtap="plus" data-id="{{index}}">+</label>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
