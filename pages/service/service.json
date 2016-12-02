@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor":"#ffaad5",
+    "navigationBarTextStyle":"blue",
+    "navigationBarTitleText":"客服",
+    "backgroundColor":"#eeeeee",
+    "backgroundTextStyle":"light",
+    "enablePullDownRefresh":true
+}

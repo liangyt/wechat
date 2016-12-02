@@ -9,7 +9,10 @@
     "pages/interface/interface",
     "pages/com/com",
     
-    "pages/center/center"
+    "pages/center/center",
+    "pages/myorder/myorder",
+    "pages/help/help",
+    "pages/service/service"
   ],
   "window":{
     "backgroundTextStyle":"light",
