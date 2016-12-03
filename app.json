@@ -11,6 +11,8 @@
     
     "pages/center/center",
     "pages/myorder/myorder",
+    "pages/setmobile/setmobile",
+    "pages/address/address",
     "pages/help/help",
     "pages/service/service"
   ],

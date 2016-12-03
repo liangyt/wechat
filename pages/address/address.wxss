@@ -1,0 +1,26 @@
+.order-title {
+    margin: 0 15px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.order-bottom-btn {
+    padding: 5px 15px;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+.order-panel {
+    background-color: #ccc;
+    padding: 10px 0 0 0;
+}
+.weui-panel__bd {
+    background-color: #fff;
+}
+.address-default {
+    align-self: flex-start;
+}
+.address-icon {
+    width: 15px;
+    height: 15px;
+}

@@ -1,7 +1,7 @@
 {
     "navigationBarBackgroundColor":"#ffaad5",
     "navigationBarTextStyle":"blue",
-    "navigationBarTitleText":"组件测试",
+    "navigationBarTitleText":"地址列表",
     "backgroundColor":"#eeeeee",
     "backgroundTextStyle":"light",
     "enablePullDownRefresh":true

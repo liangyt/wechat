@@ -1,0 +1,22 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access order-panel" wx:for="{{addresses}}">
+            <view class="weui-panel__bd">
+                <view class="order-title">
+                    <view class="order-title-date">{{item.mobile}}</view>
+                    <view class="order-title-status">{{item.name}}</view>
+                </view>
+                <view  class="weui-media-box weui-media-box_appmsg order-item" hover-class="weui-cell_active">
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        {{item.address}}
+                    </view>
+                </view>
+                <view class="weui-media-box weui-media-box_appmsg order-bottom-btn">
+                    <view class="address-default">设为默认</view>
+                    <view><image class="address-icon" src="../../images/icon-edit.png"></image>编辑</view>
+                    <view><image class="address-icon" src="../../images/icon-del.png"></image>删除</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
