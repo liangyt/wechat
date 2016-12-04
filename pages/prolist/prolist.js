@@ -2,7 +2,8 @@ var app = getApp();
 Page({
     data: {
         list:[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        sysInfo:{}
+        sysInfo:{},
+        isLoading: false
     },
     // 到了顶部
     upperddd: function(e) {
@@ -12,11 +13,16 @@ Page({
     lower: function(e) {
         // console.log('bottom')
         var self = this;
+        self.setData({isLoading:true})
         self.data.list.push(self.data.list.lenght + 1);
         self.data.list.push(self.data.list.lenght + 1);
-        this.setData({
-            list:self.data.list
-        })
+        setTimeout(function() {
+            self.setData({
+                list:self.data.list
+            })
+            self.setData({isLoading:false})
+        }, 2000)
+        
     },
     scroll: function(e) {
         console.log('srcoll')

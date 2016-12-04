@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor":"#ffaad5",
+    "navigationBarTextStyle":"blue",
+    "navigationBarTitleText":"地址处理",
+    "backgroundColor":"#eeeeee",
+    "backgroundTextStyle":"light",
+    "enablePullDownRefresh":true
+}

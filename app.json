@@ -12,7 +12,9 @@
     "pages/center/center",
     "pages/myorder/myorder",
     "pages/setmobile/setmobile",
+    "pages/addressadd/addressadd",
     "pages/address/address",
+
     "pages/help/help",
     "pages/service/service"
   ],

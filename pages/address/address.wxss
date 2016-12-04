@@ -18,9 +18,14 @@
     background-color: #fff;
 }
 .address-default {
-    align-self: flex-start;
+    width: 70%;
 }
 .address-icon {
     width: 15px;
     height: 15px;
+}
+.address-btn-add {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }

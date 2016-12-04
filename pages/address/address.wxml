@@ -13,10 +13,13 @@
                 </view>
                 <view class="weui-media-box weui-media-box_appmsg order-bottom-btn">
                     <view class="address-default">设为默认</view>
-                    <view><image class="address-icon" src="../../images/icon-edit.png"></image>编辑</view>
-                    <view><image class="address-icon" src="../../images/icon-del.png"></image>删除</view>
+                    <view><navigator url="../addressadd/addressadd?id={{item.id}}"><image class="address-icon" src="../../images/icon-edit.png"></image>编辑</navigator></view>
+                    <view data-id="{{item.id}}" data-index="{{index}}" bindtap="del"><image class="address-icon" src="../../images/icon-del.png"></image>删除</view>
                 </view>
             </view>
+        </view>
+        <view class="address-btn-add">
+            <navigator url="../addressadd/addressadd"><button class="weui-btn" type="primary" bindtap="edit">添加地址</button></navigator>
         </view>
     </view>
 </view>
