@@ -8,4 +8,8 @@
 ![image](https://github.com/liangyt/github-resource/blob/master/wechart-resource/prodetail.png)
 ![image](https://github.com/liangyt/github-resource/blob/master/wechart-resource/cart.png)
 ![image](https://github.com/liangyt/github-resource/blob/master/wechart-resource/center.png)
+![image](https://github.com/liangyt/github-resource/blob/master/wechart-resource/myorder.png)
+![image](https://github.com/liangyt/github-resource/blob/master/wechart-resource/mobile.png)
+![image](https://github.com/liangyt/github-resource/blob/master/wechart-resource/addresses.png)
+![image](https://github.com/liangyt/github-resource/blob/master/wechart-resource/address.png)
 
